@@ -29,7 +29,7 @@ function App() {
 
   // Estados para o modal de mensagem (pode ser útil para feedback de navegação, se necessário)
   const [showModal, setShowModal] = useState(false);
-  const [modalMessage, setModalMessage] = useState('');
+  
 
   // Estados para a seção de Relatórios e KPIs (filtros)
   
