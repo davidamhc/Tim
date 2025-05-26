@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // Removidas importações de Firebase
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts'; // Manter para estrutura de gráficos, mas serão estáticos ou com dados mockados simples
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell} from 'recharts'; // Manter para estrutura de gráficos, mas serão estáticos ou com dados mockados simples
 
 // Componente principal da aplicação
 function App() {
@@ -32,20 +32,15 @@ function App() {
   const [modalMessage, setModalMessage] = useState('');
 
   // Estados para a seção de Relatórios e KPIs (filtros)
-  const [selectedYear, setSelectedYear] = useState('2024');
-  const [selectedMonthCapex, setSelectedMonthCapex] = useState('Janeiro');
-
+  
+  
   // Estados para a tela de Aprovações (filtros)
   const [filterApprovalType, setFilterApprovalType] = useState('Todos');
-  const [filterApprovalStatus, setFilterApprovalStatus] = useState('Todos');
-  const [filterApprovalSearch, setFilterApprovalSearch] = useState('');
+  
 
 
   // Função para exibir o modal de mensagem
-  const showMessageBox = (message) => {
-    setModalMessage(message);
-    setShowModal(true);
-  };
+ 
 
   // Efeito para carregar os dados mockados estáticos
   useEffect(() => {
@@ -117,7 +112,7 @@ function App() {
 
   // Cores para os gráficos (mantidas para consistência visual se os gráficos forem mockados)
   const PIE_COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
-  const STACKED_BAR_COLORS = ['#4CAF50', '#2196F3', '#FFC107', '#9C27B0', '#FF5722', '#00BCD4', '#8BC34A'];
+  
 
   // Função para renderizar a seção de visão geral
   const renderOverview = () => (
